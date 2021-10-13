@@ -30,13 +30,13 @@ To understand the concepts behind Redux, we first need to take a look at the mai
 
 Redux involes three parts: Actions, Reducers and Store.
 
-![alt text](buildingblocks.png "Building Blocks")
+![alt text](./images/buildingblocks.png "Building Blocks")
 
 ### Action creators
 
 Action Objects can be created by using functions (This is opional). These functions are called action creators:
 
-![alt text](actioncreators.png "Action Creators")
+![alt text](./images/actioncreators.png "Action Creators")
 
 You can see that the only purpose of an action creatore function is to return the action object.
 
@@ -46,11 +46,11 @@ Reducers are the most important building block and it's important to understand 
 
 Reducers are pure JavaScript functions that take the current application state and an action object and return a new application state.
 
-![alt text](reducer.png "Reducer")
+![alt text](./images/reducer.png "Reducer")
 
 The important thing to notice here is that the state is not changed directly. Instead, a new state object (based on the old state) is created and the update is done to the new state.
 
-![alt text](reducer2.png "Reducer 2")
+![alt text](./images/reducer2.png "Reducer 2")
 
 ### Store
 
