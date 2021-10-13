@@ -1,10 +1,15 @@
 import initialState from "../store/initialState";
 
 const rootReducer = (state = initialState, action) => {
-  if (action.type === "CHANGE_GREETING") {
-    return { ...state, greeting: action.payload };
-  } else {
-    return state;
+  switch (action.type) {
+    case "CHANGE_GREETING":
+      return {
+        ...state,
+        greeting: action.payload,
+      };
+
+    default:
+      return state;
   }
 };
 
