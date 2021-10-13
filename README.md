@@ -52,6 +52,12 @@ The important thing to notice here is that the state is not changed directly. In
 
 ![alt text](reducer2.png "Reducer 2")
 
+### Store
+
+The store is the central objects that hold the state of the application. The store is created by using the createStore method from the Redux library.
+
+![alt text](store.png "Store")
+
 ## Redux Work Flow
 
 ```
