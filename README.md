@@ -16,13 +16,13 @@ Redux maintains the state of an entire application in a single immutable state t
 
 ## Benefits
 
-Server rendering
+- Server rendering
 
-Developer tools
+- Developer tools
 
-Ease of testing
+- Ease of testing
 
-Community and ecosystem
+- Community and ecosystem
 
 ## Building Blocks
 
@@ -32,8 +32,29 @@ Redux involes three parts: Actions, Reducers and Store.
 
 ![alt text](buildingblocks.png "Building Blocks")
 
+### Action creators
+
+Action Objects can be created by using functions (This is opional). These functions are called action creators:
+
+![alt text](actioncreators.png "Action Creators")
+
+You can see that the only purpose of an action creatore function is to return the action object.
+
+### Reducers
+
+Reducers are the most important building block and it's important to understand the concept.
+
+Reducers are pure JavaScript functions that take the current application state and an action object and return a new application state.
+
+![alt text](reducer.png "Reducer")
+
+The important thing to notice here is that the state is not changed directly. Instead, a new state object (based on the old state) is created and the update is done to the new state.
+
+![alt text](reducer2.png "Reducer 2")
+
 ## Redux Work Flow
 
+```
 yarn add redux react-redux in command line.
 
 mkdir src/state
@@ -47,6 +68,7 @@ touch src/state/reducers/rootReducer.js
 touch src/state/store/configureStore.js
 
 touch src/state/store/initialState.js
+```
 
 ## Configure
 
